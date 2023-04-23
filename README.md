@@ -1,4 +1,4 @@
-# Python-for-fun
+# Python-Projects
 A reposiory of scripts on Python
 
 All this script are created by my self or are inspired to real game or story 
