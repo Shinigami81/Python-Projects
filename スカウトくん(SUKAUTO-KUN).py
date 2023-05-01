@@ -54,3 +54,18 @@ def main():# This is the main function and it's scope has manage the other ones.
         exit()
 
 print(main())
+
+
+#This one is my personal new project, it's name is スカウトくん(SUKAUTO-KUN) it come from the English and means "scout" because it's his scope.
+#This is the first version and how you can see have only 4 function but, this script will not receive update because the future version will be at my use only.
+#Anyway this script was made to prove myself what i can do in python, and to encourage you to do your best whit the knowledge you have, and if don't have learn it and do your best everytime!!! 
+#But meanwhile...
+#enjoy it.
+
+
+
+
+
+
+
+
