@@ -37,7 +37,7 @@ def print_urls():#this one print all the urls inside the html page that you give
   print('')
   return main()
 
-def scan():#This one run a simple port scan on a chosen IP adress and print also the banner on the open ports
+def scan():#This one run a port scan on a chosen IP adress and print also the banner on the open ports
   ip= input('Insert here the target:\n')
   def portscan(port): 
      s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
