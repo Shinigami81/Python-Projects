@@ -3,6 +3,7 @@ import socket
 import whois
 import requests
 import re
+import threading
 
 def find_ip():# This function find the IP from the domain ex: google.com
     url=input('Insert web site:\n')
@@ -36,10 +37,29 @@ def print_urls():#this one print all the urls inside the html page that you give
   print('')
   return main()
 
+def scan():#This one run a simple port scan on a chosen IP adress and print also the banner on the open ports
+  ip= input('Insert here the target:\n')
+  def portscan(port): 
+     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+     s.settimeout(1)
+     try: 
+         s.connect((ip,port))
+         try:
+              services= s.recv(1024).decode()
+              print(f"Port {port} is open [+] running service {services}")
+         except:
+              print(f"Port {port} is open [+]")
+     except:
+         pass
+  for port in range (0,65535):
+      thread = threading.Thread(target=portscan, args=[port])
+      thread.start()
+  return main()    
+
 
 def main():# This is the main function and it's scope has manage the other ones. It's allow you to call the others in orted to chose the function you need.
     print('Welcome chose your action:')
-    print('1) Find IP from url\n2) Find whois info\n3) Find url from IP\n4) Find urls\n5) Exit')
+    print('1) Find IP from url\n2) Find whois info\n3) Find url from IP\n4) Find urls\n5) Port Scan\n6) Exit')
     chose = int(input())
     print('')
     if chose == 1:
@@ -50,22 +70,9 @@ def main():# This is the main function and it's scope has manage the other ones.
         print (find_url_from_IP())
     elif chose == 4:
         print(print_urls())
-    elif chose == 5:   
+    elif chose == 5:
+        print(scan())    
+    elif chose == 6:   
         exit()
 
 print(main())
-
-
-#This one is my personal new project, it's name is スカウトくん(SUKAUTO-KUN) it come from the English and means "scout" because it's his scope.
-#This is the first version and how you can see have only 4 function but, this script will not receive update because the future version will be at my use only.
-#Anyway this script was made to prove myself what i can do in python, and to encourage you to do your best whit the knowledge you have, and if don't have learn it and do your best everytime!!! 
-#But meanwhile...
-#enjoy it.
-
-
-
-
-
-
-
-
