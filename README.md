@@ -25,4 +25,12 @@ Francesco Toscano 🚀
 
 - [External Contributor](https://github.com/ParzivalHack): They provided valuable assistance in finding solutions and exploring alternative ways to overcome the challenges we encountered along the journey.
 
+- 🌟 Special Thanks to Tommaso Bona 🌟
+
+I am incredibly grateful to Tommaso Bona for his invaluable support and guidance throughout the development of my Python script, スカウトくん (SUKAUTO-KUN).py. His expertise in Python and his generous assistance have been pivotal in shaping this project.
+
+Tommaso's mentorship and dedication to helping others have been a true inspiration on my journey as a developer. His insights and encouragement have empowered me to overcome challenges and explore new possibilities, resulting in a more robust and efficient script.
+
+I feel privileged to have collaborated with someone as talented and supportive as Tommaso. His passion for programming shines through in every interaction, and I cannot thank him enough for his contributions.
+
 
