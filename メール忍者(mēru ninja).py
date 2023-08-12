@@ -3,7 +3,7 @@ import smtplib
 from email.message import EmailMessage
 import time
 
-def get_pwned_data(email, api_key):
+def get_pwned_data(email, api_key): #This function collect data from the I Have Been Pwned API for moredetails consult their documentation
     url = f"https://haveibeenpwned.com/api/v3/breachedaccount/{email}"
     headers = {
         "hibp-api-key": api_key
@@ -17,13 +17,13 @@ def get_pwned_data(email, api_key):
     else:
         raise Exception(f"Failed to get data for email: {email}. Status code: {response.status_code}")
 
-def send_email_report(report_data, to_email):
+def send_email_report(report_data, to_email):#stamp the date and the hour of the execution in the object of the email
     date = time.strftime("%d/%m/%Y")
     hours = time.strftime("%H:%M:%S")
 
-    fromadd = 'pwned.checker@outlook.com'
+    fromadd = 'youremail@example.com'#the email that will send the report i used an outlook 
     subject = f'Report of {date} {hours}'
-    username = 'youremail.exemple.com' # I used the Microsoft mail services like email provider. Because is really simple to implement
+    username = 'youremail@exemple.com' # I used the Microsoft mail services like email provider. Because is really simple to implement
     app_password = 'your_app_password' # I used the microsoft outlook app password
 
     email_msg = EmailMessage()
@@ -78,7 +78,7 @@ def main():
         print(f"{email}: {', '.join(sites)}")
 
     try:
-        send_email_report(pwned_emails_data, 'black18t@icloud.com')
+        send_email_report(pwned_emails_data, 'receveremail@example.com') #write here the email where you want to receve the report
     except Exception as e:
         print(f"Failed to send email: {str(e)}")
 
