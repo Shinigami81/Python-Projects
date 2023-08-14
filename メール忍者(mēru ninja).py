@@ -86,9 +86,9 @@ if __name__ == "__main__":
     main()
 
 # Disclaimer: Usage and Responsibility
-#The メール忍者 (Mēru Ninja) script provided here is intended for educational and demonstration purposes only. It is designed to showcase the capabilities of checking email addresses against the "Have I Been Pwned" API and sending reports via the Outlook email service. I, [Your Name], would like to emphasize the following points:
+#The メール忍者 (Mēru Ninja) script provided here is intended for educational and demonstration purposes only. It is designed to showcase the capabilities of checking email addresses against the "Have I Been Pwned" API and sending reports via the Outlook email service.
 #External Service Usage: This script utilizes external services such as "Have I Been Pwned" and Microsoft Outlook to provide its functionality. I want to clarify that I do not have any ownership or control over these services. Any rights, terms, and conditions associated with these external services are solely governed by their respective service providers.
 #Usage Restrictions: Using this script for commercial, business, or other purposes beyond personal use may potentially violate the terms and conditions of the services integrated. It is crucial to thoroughly review and comply with the terms of use, privacy policies, and service agreements of "Have I Been Pwned" and Microsoft Outlook before implementing this script in your system.
 #User Responsibility: I want to make it clear that I am not responsible for any misuse of this script that might lead to a violation of the terms and conditions of the external services involved. Users are solely responsible for ensuring their compliance with the policies of the services used.
-#Consultation Recommended: Before integrating this script into your system, especially for business or commercial use, I strongly recommend consulting the terms and conditions of the services mentioned earlier. This will help you make informed decisions and avoid any unintended breaches of service agreements 
+#Consultation Recommended: Before integrating this script into your system, especially for business or commercial use, I strongly recommend consulting the terms and conditions of the services mentioned earlier. This will help you make informed decisions and avoid any unintended breaches of service agreements. 
 
